@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3E0C4B42BBC21DF00928D1F /* PixelWallet_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0C4B32BBC21DF00928D1F /* PixelWallet_SwiftUIApp.swift */; };
+		D3E0C4B62BBC21DF00928D1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0C4B52BBC21DF00928D1F /* ContentView.swift */; };
+		D3E0C4B82BBC21DF00928D1F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0C4B72BBC21DF00928D1F /* Item.swift */; };
+		D3E0C4BA2BBC21E000928D1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E0C4B92BBC21E000928D1F /* Assets.xcassets */; };
+		D3E0C4BD2BBC21E000928D1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E0C4BC2BBC21E000928D1F /* Preview Assets.xcassets */; };
+		D3E0C4C72BBC21E000928D1F /* PixelWallet_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0C4C62BBC21E000928D1F /* PixelWallet_SwiftUITests.swift */; };
+		D3E0C4D12BBC21E000928D1F /* PixelWallet_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0C4D02BBC21E000928D1F /* PixelWallet_SwiftUIUITests.swift */; };
+		D3E0C4D32BBC21E000928D1F /* PixelWallet_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0C4D22BBC21E000928D1F /* PixelWallet_SwiftUIUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3E0C4C32BBC21E000928D1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E0C4A82BBC21DF00928D1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E0C4AF2BBC21DF00928D1F;
+			remoteInfo = "PixelWallet SwiftUI";
+		};
+		D3E0C4CD2BBC21E000928D1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E0C4A82BBC21DF00928D1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E0C4AF2BBC21DF00928D1F;
+			remoteInfo = "PixelWallet SwiftUI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3E0C4B02BBC21DF00928D1F /* PixelWallet SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PixelWallet SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E0C4B32BBC21DF00928D1F /* PixelWallet_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelWallet_SwiftUIApp.swift; sourceTree = "<group>"; };
+		D3E0C4B52BBC21DF00928D1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D3E0C4B72BBC21DF00928D1F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D3E0C4B92BBC21E000928D1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3E0C4BC2BBC21E000928D1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3E0C4C22BBC21E000928D1F /* PixelWallet SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PixelWallet SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E0C4C62BBC21E000928D1F /* PixelWallet_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelWallet_SwiftUITests.swift; sourceTree = "<group>"; };
+		D3E0C4CC2BBC21E000928D1F /* PixelWallet SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PixelWallet SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E0C4D02BBC21E000928D1F /* PixelWallet_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelWallet_SwiftUIUITests.swift; sourceTree = "<group>"; };
+		D3E0C4D22BBC21E000928D1F /* PixelWallet_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelWallet_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3E0C4AD2BBC21DF00928D1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E0C4BF2BBC21E000928D1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E0C4C92BBC21E000928D1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3E0C4A72BBC21DF00928D1F = {
+			isa = PBXGroup;
+			children = (
+				D3E0C4B22BBC21DF00928D1F /* PixelWallet SwiftUI */,
+				D3E0C4C52BBC21E000928D1F /* PixelWallet SwiftUITests */,
+				D3E0C4CF2BBC21E000928D1F /* PixelWallet SwiftUIUITests */,
+				D3E0C4B12BBC21DF00928D1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3E0C4B12BBC21DF00928D1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3E0C4B02BBC21DF00928D1F /* PixelWallet SwiftUI.app */,
+				D3E0C4C22BBC21E000928D1F /* PixelWallet SwiftUITests.xctest */,
+				D3E0C4CC2BBC21E000928D1F /* PixelWallet SwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3E0C4B22BBC21DF00928D1F /* PixelWallet SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				D3E0C4B32BBC21DF00928D1F /* PixelWallet_SwiftUIApp.swift */,
+				D3E0C4B52BBC21DF00928D1F /* ContentView.swift */,
+				D3E0C4B72BBC21DF00928D1F /* Item.swift */,
+				D3E0C4B92BBC21E000928D1F /* Assets.xcassets */,
+				D3E0C4BB2BBC21E000928D1F /* Preview Content */,
+			);
+			path = "PixelWallet SwiftUI";
+			sourceTree = "<group>";
+		};
+		D3E0C4BB2BBC21E000928D1F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D3E0C4BC2BBC21E000928D1F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3E0C4C52BBC21E000928D1F /* PixelWallet SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3E0C4C62BBC21E000928D1F /* PixelWallet_SwiftUITests.swift */,
+			);
+			path = "PixelWallet SwiftUITests";
+			sourceTree = "<group>";
+		};
+		D3E0C4CF2BBC21E000928D1F /* PixelWallet SwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3E0C4D02BBC21E000928D1F /* PixelWallet_SwiftUIUITests.swift */,
+				D3E0C4D22BBC21E000928D1F /* PixelWallet_SwiftUIUITestsLaunchTests.swift */,
+			);
+			path = "PixelWallet SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3E0C4AF2BBC21DF00928D1F /* PixelWallet SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E0C4D62BBC21E000928D1F /* Build configuration list for PBXNativeTarget "PixelWallet SwiftUI" */;
+			buildPhases = (
+				D3E0C4AC2BBC21DF00928D1F /* Sources */,
+				D3E0C4AD2BBC21DF00928D1F /* Frameworks */,
+				D3E0C4AE2BBC21DF00928D1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PixelWallet SwiftUI";
+			productName = "PixelWallet SwiftUI";
+			productReference = D3E0C4B02BBC21DF00928D1F /* PixelWallet SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3E0C4C12BBC21E000928D1F /* PixelWallet SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E0C4D92BBC21E000928D1F /* Build configuration list for PBXNativeTarget "PixelWallet SwiftUITests" */;
+			buildPhases = (
+				D3E0C4BE2BBC21E000928D1F /* Sources */,
+				D3E0C4BF2BBC21E000928D1F /* Frameworks */,
+				D3E0C4C02BBC21E000928D1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3E0C4C42BBC21E000928D1F /* PBXTargetDependency */,
+			);
+			name = "PixelWallet SwiftUITests";
+			productName = "PixelWallet SwiftUITests";
+			productReference = D3E0C4C22BBC21E000928D1F /* PixelWallet SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3E0C4CB2BBC21E000928D1F /* PixelWallet SwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E0C4DC2BBC21E000928D1F /* Build configuration list for PBXNativeTarget "PixelWallet SwiftUIUITests" */;
+			buildPhases = (
+				D3E0C4C82BBC21E000928D1F /* Sources */,
+				D3E0C4C92BBC21E000928D1F /* Frameworks */,
+				D3E0C4CA2BBC21E000928D1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3E0C4CE2BBC21E000928D1F /* PBXTargetDependency */,
+			);
+			name = "PixelWallet SwiftUIUITests";
+			productName = "PixelWallet SwiftUIUITests";
+			productReference = D3E0C4CC2BBC21E000928D1F /* PixelWallet SwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3E0C4A82BBC21DF00928D1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D3E0C4AF2BBC21DF00928D1F = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					D3E0C4C12BBC21E000928D1F = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = D3E0C4AF2BBC21DF00928D1F;
+					};
+					D3E0C4CB2BBC21E000928D1F = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = D3E0C4AF2BBC21DF00928D1F;
+					};
+				};
+			};
+			buildConfigurationList = D3E0C4AB2BBC21DF00928D1F /* Build configuration list for PBXProject "PixelWallet SwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3E0C4A72BBC21DF00928D1F;
+			productRefGroup = D3E0C4B12BBC21DF00928D1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3E0C4AF2BBC21DF00928D1F /* PixelWallet SwiftUI */,
+				D3E0C4C12BBC21E000928D1F /* PixelWallet SwiftUITests */,
+				D3E0C4CB2BBC21E000928D1F /* PixelWallet SwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3E0C4AE2BBC21DF00928D1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E0C4BD2BBC21E000928D1F /* Preview Assets.xcassets in Resources */,
+				D3E0C4BA2BBC21E000928D1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E0C4C02BBC21E000928D1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E0C4CA2BBC21E000928D1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3E0C4AC2BBC21DF00928D1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E0C4B62BBC21DF00928D1F /* ContentView.swift in Sources */,
+				D3E0C4B82BBC21DF00928D1F /* Item.swift in Sources */,
+				D3E0C4B42BBC21DF00928D1F /* PixelWallet_SwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E0C4BE2BBC21E000928D1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E0C4C72BBC21E000928D1F /* PixelWallet_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E0C4C82BBC21E000928D1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E0C4D32BBC21E000928D1F /* PixelWallet_SwiftUIUITestsLaunchTests.swift in Sources */,
+				D3E0C4D12BBC21E000928D1F /* PixelWallet_SwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3E0C4C42BBC21E000928D1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3E0C4AF2BBC21DF00928D1F /* PixelWallet SwiftUI */;
+			targetProxy = D3E0C4C32BBC21E000928D1F /* PBXContainerItemProxy */;
+		};
+		D3E0C4CE2BBC21E000928D1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3E0C4AF2BBC21DF00928D1F /* PixelWallet SwiftUI */;
+			targetProxy = D3E0C4CD2BBC21E000928D1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D3E0C4D42BBC21E000928D1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3E0C4D52BBC21E000928D1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3E0C4D72BBC21E000928D1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PixelWallet SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = XJYGH4H24F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Kolev.PixelWallet-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3E0C4D82BBC21E000928D1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PixelWallet SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = XJYGH4H24F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Kolev.PixelWallet-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3E0C4DA2BBC21E000928D1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XJYGH4H24F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Kolev.PixelWallet-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixelWallet SwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PixelWallet SwiftUI";
+			};
+			name = Debug;
+		};
+		D3E0C4DB2BBC21E000928D1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XJYGH4H24F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Kolev.PixelWallet-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixelWallet SwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PixelWallet SwiftUI";
+			};
+			name = Release;
+		};
+		D3E0C4DD2BBC21E000928D1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XJYGH4H24F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Kolev.PixelWallet-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PixelWallet SwiftUI";
+			};
+			name = Debug;
+		};
+		D3E0C4DE2BBC21E000928D1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XJYGH4H24F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Kolev.PixelWallet-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PixelWallet SwiftUI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3E0C4AB2BBC21DF00928D1F /* Build configuration list for PBXProject "PixelWallet SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E0C4D42BBC21E000928D1F /* Debug */,
+				D3E0C4D52BBC21E000928D1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E0C4D62BBC21E000928D1F /* Build configuration list for PBXNativeTarget "PixelWallet SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E0C4D72BBC21E000928D1F /* Debug */,
+				D3E0C4D82BBC21E000928D1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E0C4D92BBC21E000928D1F /* Build configuration list for PBXNativeTarget "PixelWallet SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E0C4DA2BBC21E000928D1F /* Debug */,
+				D3E0C4DB2BBC21E000928D1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E0C4DC2BBC21E000928D1F /* Build configuration list for PBXNativeTarget "PixelWallet SwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E0C4DD2BBC21E000928D1F /* Debug */,
+				D3E0C4DE2BBC21E000928D1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3E0C4A82BBC21DF00928D1F /* Project object */;
+}
