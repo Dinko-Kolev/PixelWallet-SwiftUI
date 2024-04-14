@@ -129,6 +129,8 @@ struct AddTransactionSheet: View {
         
     }
     
+    
+    
 }
     #Preview {
         AddTransactionSheet( selectedCategory: Category(name: "Income", symbol: "figure.stand.circle.fill"))

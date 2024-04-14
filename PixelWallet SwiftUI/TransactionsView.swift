@@ -81,6 +81,7 @@ struct TransactionsView: View {
 
  #Preview {
      TransactionsView()
+         .modelContainer(for: Transaction.self, inMemory: true)
  }
 
 

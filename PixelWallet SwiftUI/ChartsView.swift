@@ -21,31 +21,7 @@ struct ChartsView: View {
     
     var body: some View {
         ScrollView {
-           VStack{
-                // Calculate total income, total expense, and balance for the current month
-                let totalIncome = transactions
-                    .filter { $0.isIncome && Calendar.current.isDate($0.date, equalTo: currentMonth, toGranularity: .month) }
-                    .reduce(0) { $0 + $1.amount }
-                
-                let totalExpense = transactions
-                    .filter { !$0.isIncome && Calendar.current.isDate($0.date, equalTo: currentMonth, toGranularity: .month) }
-                    .reduce(0) { $0 + $1.amount }
-                
-                let balance = totalIncome - totalExpense
-                
-                // Display total income, total expense, and balance for the current month
-                Text("Income:  " + totalIncome.roundDouble())
-                Text("Expense: " + totalExpense.roundDouble())
-                Text("Balance: " + balance.roundDouble())
-                
-             
-            }
-            .frame(maxWidth: .infinity, alignment: .center)
-            .padding()
-            .padding(.bottom, 20)
-            .foregroundColor(.black)
-            .background(labelColor)
-            .cornerRadius(20, corners: [.topLeft,.topRight])
+            CalculateTotalView( currentMonth: $currentMonth)
             Spacer()
             HStack {
                 // BackButton
@@ -88,6 +64,9 @@ struct ChartsView: View {
         return uniqueCategories.compactMap { $0 }
     }
 }
+
+
+
 
 // Bar Chart for each category
 struct CategoryBarChart: View {

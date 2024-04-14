@@ -24,7 +24,7 @@ struct UpdateCategorySheet: View {
             
                 TextField(" Category name", text: $category.name)
                 //Symbol Picker
-                Picker("Symbol", selection: $selectedSymbol) {
+                Picker("Symbol", selection: $category.symbol) {
                     ForEach(Category.symbols, id: \.utf8CString) { symbol in
                         Image(systemName: symbol)
                             .tag(symbol)
@@ -54,4 +54,5 @@ struct UpdateCategorySheet: View {
 
 #Preview {
     UpdateCategorySheet(category: Category(name: "Rent", symbol: "something"), selectedSymbol: "house.fill")
+    
 }

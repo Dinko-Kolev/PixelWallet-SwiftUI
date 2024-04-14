@@ -19,7 +19,7 @@ actor ItemsContainer {
         guard !hasAddedData else {
             // Data has already been added, return empty container
             let schema = Schema([
-                Item.self,
+             
                 Category.self,
                 Transaction.self
             ])
@@ -30,7 +30,7 @@ actor ItemsContainer {
         // Data has not been added, add it and update flag
         do {
             let schema = Schema([
-                Item.self,
+                
                 Category.self,
                 Transaction.self
             ])

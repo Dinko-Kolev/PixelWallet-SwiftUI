@@ -8,49 +8,29 @@
 import SwiftUI
 import SwiftData
 struct CalendarCollectionView: View {
-    @Environment(\.modelContext) private var modelContext
-    @State private var isShowingTransactionSheet = false
-   @Query(sort: \Transaction.id) private var transactions: [Transaction]
-    
-    
-    @State private var currentMonth: Date = Date()
+      @Environment(\.modelContext) private var modelContext
+      @State private var isShowingTransactionSheet = false
+      @Query(sort: \Transaction.id) private var transactions: [Transaction]
+      
+      
+      @State private var currentMonth: Date = Date()
       let calendar = Calendar.current
       let today = Calendar.current.component(.day, from: Date())
-    let labelColor = LinearGradient(gradient: Gradient(colors: [.white, .mint, .green]),startPoint: .zero, endPoint: .bottom)
-    
+   
+      
       var body: some View {
           ScrollView {
-              VStack{
-                  // Calculate total income, total expense, and balance for the current month
-                  let totalIncome = transactions
-                      .filter { $0.isIncome && Calendar.current.isDate($0.date, equalTo: currentMonth, toGranularity: .month) }
-                      .reduce(0) { $0 + $1.amount }
-                  
-                  let totalExpense = transactions
-                      .filter { !$0.isIncome && Calendar.current.isDate($0.date, equalTo: currentMonth, toGranularity: .month) }
-                      .reduce(0) { $0 + $1.amount }
-                  
-                  let balance = totalIncome - totalExpense
-                  
-                  // Display total income, total expense, and balance for the current month
-                  Text("Income:  " + totalIncome.roundDouble())
-                  Text("Expense: " + totalExpense.roundDouble())
-                  Text("Balance: " + balance.roundDouble())
-              }
-              .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
-                  .padding()
-                  .padding(.bottom, 20)
-                  .foregroundColor(.black)
-                  .background(labelColor)
-                  .cornerRadius(20, corners: [.topLeft,.topRight])
+              CalculateTotalView( currentMonth: $currentMonth)
+
+              
               Spacer()
+              
               HStack {
                   // BackButton
                   Button(action: {
                       self.currentMonth = self.calendar.date(byAdding: .month, value: -1, to: self.currentMonth)!
                   }) {
                       Image(systemName: "arrowshape.backward.circle")
-                          
                   }
                   
                   // Current Month
@@ -65,7 +45,8 @@ struct CalendarCollectionView: View {
               }
               .padding(.horizontal)
               
-              LazyVGrid(columns: Array(repeating: GridItem(), count: 7), spacing: 1) {
+            
+              LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 7), spacing: 1) {
                   ForEach(daysOfMonth(), id: \.self) { day in
                       if day == 0 {
                           Color.clear
@@ -76,9 +57,13 @@ struct CalendarCollectionView: View {
                                   .frame(width: 40.0, height: 10)
                                   .font(.system(size: 14))
                               
-                       
+                              // Calculate the number of transactions and balance for the current day
+                              let dayTransactions = transactions.filter { calendar.isDate($0.date, equalTo: currentMonth, toGranularity: .month) && calendar.component(.day, from: $0.date) == day }
+                              let dayIncome = dayTransactions.filter { $0.isIncome }.reduce(0) { $0 + $1.amount }
+                              let dayExpense = dayTransactions.filter { !$0.isIncome }.reduce(0) { $0 + $1.amount }
+                              let dayBalance = dayIncome - dayExpense
                               
-                              Text("Trans: \n Bal: ")
+                              Text("Trans: \(dayTransactions.count)\nBal: \(dayBalance.roundDouble())")
                                   .frame(width: 40, height: 50)
                                   .font(.system(size: 8))
                           }
@@ -91,10 +76,11 @@ struct CalendarCollectionView: View {
                   }
               }
               .padding()
+              
+              
           }
-          .navigationTitle("Days of the Month")
+            
           
-       
       }
       
     func daysOfMonth() -> [Int] {
@@ -104,34 +90,15 @@ struct CalendarCollectionView: View {
         let emptySpacesCount = (firstDayOfMonth - 2 + 7) % 7
         let emptySpaces = Array(repeating: 0, count: emptySpacesCount)
         return emptySpaces + days
-    }  }
+    }
+  }
 
-  extension Date {
-      func startOfMonth() -> Date {
-          let calendar = Calendar.current
-          let components = calendar.dateComponents([.year, .month], from: self)
-          return calendar.date(from: components)!
-      }
-      
-      func monthAsString() -> String {
-          let dateFormatter = DateFormatter()
-          dateFormatter.dateFormat = "MMMM"
-          return dateFormatter.string(from: self)
-      }
-      
-      func yearAsString() -> String {
-          let dateFormatter = DateFormatter()
-          dateFormatter.dateFormat = "yyyy"
-          return dateFormatter.string(from: self)
+
+
+
+  struct CalendarCollectionView_Previews: PreviewProvider {
+      static var previews: some View {
+          CalendarCollectionView()
       }
   }
 
-    struct CalendarCollectionView_Previews: PreviewProvider {
-        static var previews: some View {
-            CalendarCollectionView()
-        }
-}
-
-#Preview {
-    CalendarCollectionView()
-}

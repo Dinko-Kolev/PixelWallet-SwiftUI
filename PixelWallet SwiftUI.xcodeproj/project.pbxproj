@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32A46502BC9DD63007EF58B /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A464F2BC9DD63007EF58B /* SummaryView.swift */; };
+		D32A46522BC9DD8B007EF58B /* NavigationControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A46512BC9DD8B007EF58B /* NavigationControlsView.swift */; };
+		D32A46542BC9DDB3007EF58B /* CalendarGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A46532BC9DDB3007EF58B /* CalendarGridView.swift */; };
+		D32A46562BC9DDEE007EF58B /* DayCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A46552BC9DDEE007EF58B /* DayCellView.swift */; };
 		D3B2415B2BC16BE8003251CF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B2415A2BC16BE8003251CF /* Extensions.swift */; };
+		D3C99D002BCC48330038221D /* DayTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C99CFF2BCC48330038221D /* DayTransactionsView.swift */; };
+		D3C99D022BCC5DDF0038221D /* CalculateTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C99D012BCC5DDF0038221D /* CalculateTotalView.swift */; };
+		D3C99D042BCC64540038221D /* SelectedMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C99D032BCC64540038221D /* SelectedMonthView.swift */; };
+		D3C99D062BCC6B8A0038221D /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C99D052BCC6B8A0038221D /* TransactionsViewModel.swift */; };
+		D3C99D082BCC74B00038221D /* DonutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C99D072BCC74B00038221D /* DonutChartView.swift */; };
 		D3CB7EAA2BBD32B100FB9D04 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CB7EA92BBD32B100FB9D04 /* Transaction.swift */; };
 		D3CB7EAC2BBD474700FB9D04 /* ItemsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CB7EAB2BBD474700FB9D04 /* ItemsContainer.swift */; };
 		D3CB7EAE2BBD557D00FB9D04 /* UpdateCategorySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CB7EAD2BBD557D00FB9D04 /* UpdateCategorySheet.swift */; };
@@ -15,8 +24,6 @@
 		D3CB7EB42BBDA2E700FB9D04 /* AddTransactionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CB7EB32BBDA2E700FB9D04 /* AddTransactionSheet.swift */; };
 		D3CB7EB62BBDA6DA00FB9D04 /* UpdateTransactionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CB7EB52BBDA6DA00FB9D04 /* UpdateTransactionSheet.swift */; };
 		D3E0C4B42BBC21DF00928D1F /* PixelWallet_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0C4B32BBC21DF00928D1F /* PixelWallet_SwiftUIApp.swift */; };
-		D3E0C4B62BBC21DF00928D1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0C4B52BBC21DF00928D1F /* ContentView.swift */; };
-		D3E0C4B82BBC21DF00928D1F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0C4B72BBC21DF00928D1F /* Item.swift */; };
 		D3E0C4BA2BBC21E000928D1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E0C4B92BBC21E000928D1F /* Assets.xcassets */; };
 		D3E0C4BD2BBC21E000928D1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E0C4BC2BBC21E000928D1F /* Preview Assets.xcassets */; };
 		D3E0C4C72BBC21E000928D1F /* PixelWallet_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0C4C62BBC21E000928D1F /* PixelWallet_SwiftUITests.swift */; };
@@ -54,7 +61,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D32A464F2BC9DD63007EF58B /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		D32A46512BC9DD8B007EF58B /* NavigationControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControlsView.swift; sourceTree = "<group>"; };
+		D32A46532BC9DDB3007EF58B /* CalendarGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarGridView.swift; sourceTree = "<group>"; };
+		D32A46552BC9DDEE007EF58B /* DayCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCellView.swift; sourceTree = "<group>"; };
 		D3B2415A2BC16BE8003251CF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D3C99CFF2BCC48330038221D /* DayTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTransactionsView.swift; sourceTree = "<group>"; };
+		D3C99D012BCC5DDF0038221D /* CalculateTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTotalView.swift; sourceTree = "<group>"; };
+		D3C99D032BCC64540038221D /* SelectedMonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedMonthView.swift; sourceTree = "<group>"; };
+		D3C99D052BCC6B8A0038221D /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
+		D3C99D072BCC74B00038221D /* DonutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutChartView.swift; sourceTree = "<group>"; };
 		D3CB7EA92BBD32B100FB9D04 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		D3CB7EAB2BBD474700FB9D04 /* ItemsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsContainer.swift; sourceTree = "<group>"; };
 		D3CB7EAD2BBD557D00FB9D04 /* UpdateCategorySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCategorySheet.swift; sourceTree = "<group>"; };
@@ -63,8 +79,6 @@
 		D3CB7EB52BBDA6DA00FB9D04 /* UpdateTransactionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTransactionSheet.swift; sourceTree = "<group>"; };
 		D3E0C4B02BBC21DF00928D1F /* PixelWallet SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PixelWallet SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E0C4B32BBC21DF00928D1F /* PixelWallet_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelWallet_SwiftUIApp.swift; sourceTree = "<group>"; };
-		D3E0C4B52BBC21DF00928D1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D3E0C4B72BBC21DF00928D1F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D3E0C4B92BBC21E000928D1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3E0C4BC2BBC21E000928D1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3E0C4C22BBC21E000928D1F /* PixelWallet SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PixelWallet SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,11 +128,6 @@
 		D3E0C4A72BBC21DF00928D1F = {
 			isa = PBXGroup;
 			children = (
-				D3B2415A2BC16BE8003251CF /* Extensions.swift */,
-				D3CB7EB52BBDA6DA00FB9D04 /* UpdateTransactionSheet.swift */,
-				D3CB7EB32BBDA2E700FB9D04 /* AddTransactionSheet.swift */,
-				D3CB7EAF2BBDA03300FB9D04 /* TransactionCellView.swift */,
-				D3E0C4E52BBC22D700928D1F /* TransactionsView.swift */,
 				D3E0C4B22BBC21DF00928D1F /* PixelWallet SwiftUI */,
 				D3E0C4C52BBC21E000928D1F /* PixelWallet SwiftUITests */,
 				D3E0C4CF2BBC21E000928D1F /* PixelWallet SwiftUIUITests */,
@@ -147,16 +156,23 @@
 				D3E0C4F82BBC3A7F00928D1F /* AddCategorySheet.swift */,
 				D3CB7EAD2BBD557D00FB9D04 /* UpdateCategorySheet.swift */,
 				D3E0C4E72BBC22D700928D1F /* ChartsView.swift */,
-				D3E0C4E62BBC22D700928D1F /* DefaultCategories.swift */,
 				D3E0C4E12BBC22D700928D1F /* MonthlyTableView.swift */,
 				D3E0C4E22BBC22D700928D1F /* SettingsView.swift */,
+				D3B2415A2BC16BE8003251CF /* Extensions.swift */,
+				D3CB7EB52BBDA6DA00FB9D04 /* UpdateTransactionSheet.swift */,
+				D3CB7EB32BBDA2E700FB9D04 /* AddTransactionSheet.swift */,
+				D3CB7EAF2BBDA03300FB9D04 /* TransactionCellView.swift */,
+				D3E0C4E52BBC22D700928D1F /* TransactionsView.swift */,
+				D3E0C4DF2BBC226D00928D1F /* MainView.swift */,
 				D3CB7EAB2BBD474700FB9D04 /* ItemsContainer.swift */,
 				D3E0C4B32BBC21DF00928D1F /* PixelWallet_SwiftUIApp.swift */,
-				D3E0C4DF2BBC226D00928D1F /* MainView.swift */,
-				D3E0C4B52BBC21DF00928D1F /* ContentView.swift */,
-				D3E0C4B72BBC21DF00928D1F /* Item.swift */,
 				D3E0C4B92BBC21E000928D1F /* Assets.xcassets */,
 				D3E0C4BB2BBC21E000928D1F /* Preview Content */,
+				D3C99CFF2BCC48330038221D /* DayTransactionsView.swift */,
+				D3C99D012BCC5DDF0038221D /* CalculateTotalView.swift */,
+				D3C99D032BCC64540038221D /* SelectedMonthView.swift */,
+				D3C99D072BCC74B00038221D /* DonutChartView.swift */,
+				D3C99D052BCC6B8A0038221D /* TransactionsViewModel.swift */,
 			);
 			path = "PixelWallet SwiftUI";
 			sourceTree = "<group>";
@@ -165,6 +181,10 @@
 			isa = PBXGroup;
 			children = (
 				D3E0C4BC2BBC21E000928D1F /* Preview Assets.xcassets */,
+				D32A464F2BC9DD63007EF58B /* SummaryView.swift */,
+				D32A46512BC9DD8B007EF58B /* NavigationControlsView.swift */,
+				D32A46532BC9DDB3007EF58B /* CalendarGridView.swift */,
+				D32A46552BC9DDEE007EF58B /* DayCellView.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -191,6 +211,7 @@
 			children = (
 				D3E0C4F42BBC238300928D1F /* Category.swift */,
 				D3CB7EA92BBD32B100FB9D04 /* Transaction.swift */,
+				D3E0C4E62BBC22D700928D1F /* DefaultCategories.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -325,25 +346,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3E0C4B62BBC21DF00928D1F /* ContentView.swift in Sources */,
 				D3E0C4F92BBC3A7F00928D1F /* AddCategorySheet.swift in Sources */,
 				D3CB7EB62BBDA6DA00FB9D04 /* UpdateTransactionSheet.swift in Sources */,
 				D3CB7EAA2BBD32B100FB9D04 /* Transaction.swift in Sources */,
 				D3E0C4E92BBC22D700928D1F /* MonthlyTableView.swift in Sources */,
 				D3CB7EAE2BBD557D00FB9D04 /* UpdateCategorySheet.swift in Sources */,
+				D32A46562BC9DDEE007EF58B /* DayCellView.swift in Sources */,
+				D3C99D022BCC5DDF0038221D /* CalculateTotalView.swift in Sources */,
 				D3E0C4EC2BBC22D700928D1F /* CalendarView.swift in Sources */,
 				D3E0C4E02BBC226D00928D1F /* MainView.swift in Sources */,
 				D3CB7EAC2BBD474700FB9D04 /* ItemsContainer.swift in Sources */,
+				D32A46522BC9DD8B007EF58B /* NavigationControlsView.swift in Sources */,
+				D32A46542BC9DDB3007EF58B /* CalendarGridView.swift in Sources */,
+				D32A46502BC9DD63007EF58B /* SummaryView.swift in Sources */,
 				D3B2415B2BC16BE8003251CF /* Extensions.swift in Sources */,
 				D3CB7EB42BBDA2E700FB9D04 /* AddTransactionSheet.swift in Sources */,
 				D3E0C4EA2BBC22D700928D1F /* SettingsView.swift in Sources */,
 				D3CB7EB02BBDA03300FB9D04 /* TransactionCellView.swift in Sources */,
+				D3C99D042BCC64540038221D /* SelectedMonthView.swift in Sources */,
 				D3E0C4ED2BBC22D700928D1F /* TransactionsView.swift in Sources */,
+				D3C99D062BCC6B8A0038221D /* TransactionsViewModel.swift in Sources */,
 				D3E0C4F72BBC329300928D1F /* CategoryCellView.swift in Sources */,
 				D3E0C4EB2BBC22D700928D1F /* CalendarCollectionView.swift in Sources */,
-				D3E0C4B82BBC21DF00928D1F /* Item.swift in Sources */,
 				D3E0C4F02BBC22D700928D1F /* CategoriesView.swift in Sources */,
 				D3E0C4F52BBC238300928D1F /* Category.swift in Sources */,
+				D3C99D002BCC48330038221D /* DayTransactionsView.swift in Sources */,
+				D3C99D082BCC74B00038221D /* DonutChartView.swift in Sources */,
 				D3E0C4B42BBC21DF00928D1F /* PixelWallet_SwiftUIApp.swift in Sources */,
 				D3E0C4EE2BBC22D700928D1F /* DefaultCategories.swift in Sources */,
 				D3E0C4EF2BBC22D700928D1F /* ChartsView.swift in Sources */,
